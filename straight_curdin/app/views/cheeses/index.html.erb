@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>The Great Hall of Cheeses</h1>
+<ul>
+ <% @cheeses.each do |cheese| %>
+  <li><%= link_to cheese[:name], cheese_path(cheese)%></li>
+  <p><%= button_to 'Edit this Cheese', "/cheeses/#{cheese.id}/edit", :method => 'get' %></p>
+  <p><%= button_to 'Eat This Cheese', cheese, :method => 'delete' %></p>
+  <% end %>
+</ul>
+<span><%= link_to 'Add a Cheese!', new_cheese_path%></span>
+<span><%= link_to 'Cheesemongers Choice!', cheesemongers_choice_path%></span>
+</div>

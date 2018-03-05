@@ -1,0 +1,21 @@
+header {
+  background-image: url("http://robertiulo.com/wp-content/uploads/2018/01/heroCheese.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  font-size: 76px;
+  color: ivory;
+  text-align: center;
+}
+
+.container {
+
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  background: ivory;
+}
+
+ul {
+  list-style-type: none;
+}
